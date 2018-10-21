@@ -18,6 +18,6 @@ logstash_install_plugins:
 
 logstash_version: 6.x
 logstash_key: https://artifacts.elastic.co/GPG-KEY-elasticsearch
-logstash_debian_repository: https://artifacts.elastic.co/packages/{{ logstash_key }}/apt
-logstash_redhat_repository: https://artifacts.elastic.co/packages/{{ logstash_key }}/yum
+logstash_debian_repository: https://artifacts.elastic.co/packages/{{ logstash_version }}/apt
+logstash_redhat_repository: https://artifacts.elastic.co/packages/{{ logstash_version }}/yum
 
