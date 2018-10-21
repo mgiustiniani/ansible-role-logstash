@@ -1,3 +1,6 @@
 ---
 - src: geerlingguy.java
-- src: geerlingguy.elasticsearch
+- src: https://github.com/mgiustiniani/ansible-role-elasticsearch.git
+  name: manticore.elasticsearch
+- src: https://github.com/mgiustiniani/ansible-role-logstash.git
+  name: manticore.logstash
