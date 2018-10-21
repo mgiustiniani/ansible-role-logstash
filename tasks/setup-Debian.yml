@@ -17,6 +17,11 @@
   apt: update_cache=yes
   when: logstash_installed.stat.exists == false
 
+- name: install packages
+    apt: name={{ item }}
+    with_items:
+      - apt-transport-https
+
 - name: Install Logstash.
   apt: pkg=logstash state=present
 
