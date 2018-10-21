@@ -15,3 +15,9 @@ logstash_enabled_on_boot: true
 
 logstash_install_plugins:
   - logstash-input-beats
+
+logstash_version: 6.x
+logstash_key: https://artifacts.elastic.co/GPG-KEY-elasticsearch
+logstash_debian_repository: https://artifacts.elastic.co/packages/{{ logstash_key }}/apt
+logstash_redhat_repository: https://artifacts.elastic.co/packages/{{ logstash_key }}/yum
+

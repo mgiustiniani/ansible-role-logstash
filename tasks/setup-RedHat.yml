@@ -1,7 +1,7 @@
 ---
 - name: Add Elasticsearch GPG key.
   rpm_key:
-    key: http://packages.elasticsearch.org/GPG-KEY-elasticsearch
+    key: "{{ logstash_key }}"
     state: present
 
 - name: Add Logstash repository.
