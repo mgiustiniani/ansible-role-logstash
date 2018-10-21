@@ -1,0 +1,6 @@
+[logstash-{{ logstash_version }}]
+name=Logstash repository for 6.x packages
+baseurl={{ logstash_redhat_repository }}
+gpgcheck=1
+gpgkey={{ logstash_key }}
+enabled=1
