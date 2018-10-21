@@ -18,10 +18,9 @@
   when: logstash_installed.stat.exists == false
 
 - name: install packages
-    apt: name={{ item }}
+    apt: name="{{ item }}" state=present
     with_items:
-      - apt-transport-https
-
+      - apt-transport-https  
 - name: Install Logstash.
   apt: pkg=logstash state=present
 
