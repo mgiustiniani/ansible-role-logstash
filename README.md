@@ -1,6 +1,6 @@
 # Ansible Role: Logstash
 
-[![Build Status](https://travis-ci.org/manticore/ansible-role-logstash.svg?branch=master)](https://travis-ci.org/manticore/ansible-role-logstash)
+[![Build Status](https://travis-ci.org/mgiustiniani/ansible-role-logstash.svg?branch=master)](https://travis-ci.org/mgiustiniani/ansible-role-logstash)
 
 An Ansible Role that installs Logstash on RedHat/CentOS Debian/Ubuntu.
 
