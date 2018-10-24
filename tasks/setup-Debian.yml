@@ -1,11 +1,11 @@
 ---
-- name: install packages
-  apt: pkg=apt-transport-https state=present
-  
 - name: Add Elasticsearch apt key.
   apt_key:
     url: "{{ logstash_key }}"
     state: present
+
+- name: install packages
+  apt: pkg=apt-transport-https state=present
 
 - name: Add Logstash repository.
   apt_repository:
